@@ -45,6 +45,7 @@ tsc --init --declaration --allowSyntheticDefaultImports --target esnext --outDir
                 }
             }
         ],
+        "@babel/preset-react",
         "@babel/preset-typescript"
     ],
     "plugins": [
