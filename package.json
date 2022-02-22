@@ -1,17 +1,18 @@
 {
-  "name": "webpack5-web",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "react-dialog",
+  "version": "0.0.1",
+  "description": "创建一个弹窗的示例",
+  "main": "dist/index.js",
+  "module": "src/index.tsx",
   "scripts": {
     "test": "webpack --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["dialog"],
+  "author": "shen9401",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
