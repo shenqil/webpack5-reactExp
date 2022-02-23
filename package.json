@@ -1,5 +1,5 @@
 {
-  "name": "react-dialog",
+  "name": "@shen9401/react-dialog",
   "version": "0.0.1",
   "description": "创建一个弹窗的示例",
   "main": "dist/index.js",
@@ -9,11 +9,19 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
-
   },
   "keywords": ["dialog"],
   "author": "shen9401",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenqil/webpack5-reactExp/tree/library"
+  },
+  "bugs": {
+    "url": "https://github.com/shenqil/webpack5-reactExp/issues"
+  },
+  "sideEffects": false,
+  "homepage": "https://github.com/shenqil/webpack5-reactExp/blob/library/README.md",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
