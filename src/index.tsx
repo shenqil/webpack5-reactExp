@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
+import './index.scss';
 
 export interface IDialogProps{
   hideDialog:Function
@@ -11,7 +12,7 @@ export default class Dialog extends Component<IDialogProps> {
     super(props);
 
     this.node = document.createElement('div');
-    this.node.classList.add('sss');
+    this.node.classList.add('dialog');
   }
 
   componentDidMount() {
@@ -25,7 +26,7 @@ export default class Dialog extends Component<IDialogProps> {
   render() {
     const { hideDialog, children } = this.props;
     return createPortal(
-      <div>
+      <div className="dialog-model">
         {children}
         {typeof hideDialog === 'function' && (
         <button onClick={() => hideDialog()} type="button">关闭窗口</button>

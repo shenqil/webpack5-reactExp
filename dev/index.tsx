@@ -8,9 +8,7 @@ function App(){
   return (
     <div>
       <h3>DialogPage</h3>
-      <button onClick={() => this.setState({
-          isShowDialog: !isShowDialog
-      })}>
+      <button onClick={() => setIsShowDialog(true)}>
           toggle
       </button>
       {isShowDialog && <Diallog children="hello" hideDialog={() => setIsShowDialog(false)} />}
