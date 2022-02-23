@@ -50,7 +50,13 @@ module.exports = {
                         },
                     },
                     // 将css文件变成commonjs模块加载js中，里面内容是样式字符串
-                    "css-loader",
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 2,
+                        }
+                    },
+                    'postcss-loader',
                     'sass-loader'
                 ],
             },
