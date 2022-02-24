@@ -2,8 +2,12 @@
   "name": "@shen9401/react-dialog",
   "version": "0.0.3",
   "description": "创建一个弹窗的示例",
-  "main": "src/index.tsx",
-  "module": "dist/index.js",
+  "main": "index.js",
+  "module": "index.js",
+  "style": "style.css",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "webpack --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js",

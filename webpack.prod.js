@@ -15,7 +15,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'static/css/[name].[contenthash:10].css',
+            filename: 'style.css',
             chunkFilename: '[id].css',
         }),
     ],
@@ -45,9 +45,6 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            publicPath: '../../',
-                        },
                     },
                     // 将css文件变成commonjs模块加载js中，里面内容是样式字符串
                     {
