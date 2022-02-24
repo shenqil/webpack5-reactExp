@@ -8,7 +8,8 @@
     "test": "webpack --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "push": "npm version patch && npm run build && npm publish --access public"
   },
   "keywords": ["dialog"],
   "author": "shen9401",
