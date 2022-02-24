@@ -61,7 +61,7 @@
   },
   "include": [
     "src/**/*",
-    "dev/**/*"
+    "example/**/*"
   ],
   "exclude": [
     "node_modules",
