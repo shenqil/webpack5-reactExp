@@ -1,6 +1,6 @@
 {
   "name": "@shen9401/react-dialog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "创建一个弹窗的示例",
   "main": "src/index.tsx",
   "module": "dist/index.js",
@@ -11,7 +11,9 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "push": "npm version patch && npm run build && npm publish --access public"
   },
-  "keywords": ["dialog"],
+  "keywords": [
+    "dialog"
+  ],
   "author": "shen9401",
   "license": "MIT",
   "repository": {
