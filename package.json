@@ -1,6 +1,6 @@
 {
   "name": "@shen9401/react-dialog",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "创建一个弹窗的示例",
   "main": "dist/index.js",
   "module": "dist/index.js",
