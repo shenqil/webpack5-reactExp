@@ -2,9 +2,9 @@
   "name": "@shen9401/react-dialog",
   "version": "0.0.4",
   "description": "创建一个弹窗的示例",
-  "main": "index.js",
-  "module": "index.js",
-  "style": "style.css",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "style": "dist/style.css",
   "files": [
     "dist"
   ],
