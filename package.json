@@ -1,9 +1,9 @@
 {
   "name": "@shen9401/react-dialog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "创建一个弹窗的示例",
-  "main": "dist/index.js",
-  "module": "src/index.tsx",
+  "main": "src/index.tsx",
+  "module": "dist/index.js",
   "scripts": {
     "test": "webpack --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js",
@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/shenqil/webpack5-reactExp/issues"
   },
-  "sideEffects": false,
   "homepage": "https://github.com/shenqil/webpack5-reactExp/blob/library/README.md",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
