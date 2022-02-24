@@ -1,4 +1,3 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
@@ -14,10 +13,6 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({
-            filename: 'style.css',
-            chunkFilename: '[id].css',
-        }),
     ],
     module: {
         rules: [
@@ -43,9 +38,7 @@ module.exports = {
             {
                 test: /\.((c|sa|sc)ss)$/i,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
+                    'style-loader',
                     // 将css文件变成commonjs模块加载js中，里面内容是样式字符串
                     {
                         loader: 'css-loader',
